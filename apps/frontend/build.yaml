@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      riverpod_generator:
+        enabled: true
+      json_serializable:
+        enabled: true

@@ -1,0 +1,666 @@
+[
+  {
+    "name": "Emma",
+    "gender": "female",
+    "meaning": "Universal, whole",
+    "origin_country": "Germany",
+    "origin_culture": "Germanic",
+    "pronunciation": "EM-uh"
+  },
+  {
+    "name": "Liam",
+    "gender": "male",
+    "meaning": "Strong-willed warrior and protector",
+    "origin_country": "Ireland",
+    "origin_culture": "Irish",
+    "pronunciation": "LEE-um"
+  },
+  {
+    "name": "Olivia",
+    "gender": "female",
+    "meaning": "Olive tree",
+    "origin_country": "Italy",
+    "origin_culture": "Latin",
+    "pronunciation": "oh-LIV-ee-uh"
+  },
+  {
+    "name": "Noah",
+    "gender": "male",
+    "meaning": "Rest, comfort",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "NO-uh"
+  },
+  {
+    "name": "Ava",
+    "gender": "female",
+    "meaning": "Life, bird",
+    "origin_country": "Germany",
+    "origin_culture": "Germanic",
+    "pronunciation": "AY-vuh"
+  },
+  {
+    "name": "Ethan",
+    "gender": "male",
+    "meaning": "Strong, firm, enduring",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "EE-thun"
+  },
+  {
+    "name": "Sophia",
+    "gender": "female",
+    "meaning": "Wisdom",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "so-FEE-uh"
+  },
+  {
+    "name": "Mason",
+    "gender": "male",
+    "meaning": "Stone worker",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "MAY-sun"
+  },
+  {
+    "name": "Isabella",
+    "gender": "female",
+    "meaning": "Pledged to God",
+    "origin_country": "Spain",
+    "origin_culture": "Spanish",
+    "pronunciation": "iz-uh-BEL-uh"
+  },
+  {
+    "name": "Lucas",
+    "gender": "male",
+    "meaning": "Light-giving",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "LOO-kus"
+  },
+  {
+    "name": "Mia",
+    "gender": "female",
+    "meaning": "Mine, wished-for child",
+    "origin_country": "Italy",
+    "origin_culture": "Italian",
+    "pronunciation": "MEE-uh"
+  },
+  {
+    "name": "Oliver",
+    "gender": "male",
+    "meaning": "Olive tree planter",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "OL-iv-er"
+  },
+  {
+    "name": "Amelia",
+    "gender": "female",
+    "meaning": "Work, industrious",
+    "origin_country": "Germany",
+    "origin_culture": "Germanic",
+    "pronunciation": "uh-MEEL-yuh"
+  },
+  {
+    "name": "Elijah",
+    "gender": "male",
+    "meaning": "My God is Yahweh",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "ee-LIE-juh"
+  },
+  {
+    "name": "Charlotte",
+    "gender": "female",
+    "meaning": "Free woman",
+    "origin_country": "France",
+    "origin_culture": "French",
+    "pronunciation": "SHAR-lut"
+  },
+  {
+    "name": "James",
+    "gender": "male",
+    "meaning": "Supplanter",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "JAYMZ"
+  },
+  {
+    "name": "Harper",
+    "gender": "neutral",
+    "meaning": "Harp player",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "HAR-per"
+  },
+  {
+    "name": "Aiden",
+    "gender": "male",
+    "meaning": "Little fire",
+    "origin_country": "Ireland",
+    "origin_culture": "Irish",
+    "pronunciation": "AY-den"
+  },
+  {
+    "name": "Aria",
+    "gender": "female",
+    "meaning": "Air, melody",
+    "origin_country": "Italy",
+    "origin_culture": "Italian",
+    "pronunciation": "AH-ree-uh"
+  },
+  {
+    "name": "Sebastian",
+    "gender": "male",
+    "meaning": "Venerable, revered",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "suh-BAS-chun"
+  },
+  {
+    "name": "Luna",
+    "gender": "female",
+    "meaning": "Moon",
+    "origin_country": "Italy",
+    "origin_culture": "Latin",
+    "pronunciation": "LOO-nuh"
+  },
+  {
+    "name": "Mateo",
+    "gender": "male",
+    "meaning": "Gift of God",
+    "origin_country": "Spain",
+    "origin_culture": "Spanish",
+    "pronunciation": "mah-TAY-oh"
+  },
+  {
+    "name": "Evelyn",
+    "gender": "female",
+    "meaning": "Desired, wished for",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "EV-lin"
+  },
+  {
+    "name": "Benjamin",
+    "gender": "male",
+    "meaning": "Son of the right hand",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "BEN-juh-min"
+  },
+  {
+    "name": "Layla",
+    "gender": "female",
+    "meaning": "Night, dark beauty",
+    "origin_country": "Arabia",
+    "origin_culture": "Arabic",
+    "pronunciation": "LAY-luh"
+  },
+  {
+    "name": "Alexander",
+    "gender": "male",
+    "meaning": "Defender of mankind",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "al-ig-ZAN-der"
+  },
+  {
+    "name": "Scarlett",
+    "gender": "female",
+    "meaning": "Red",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "SKAR-lit"
+  },
+  {
+    "name": "Michael",
+    "gender": "male",
+    "meaning": "Who is like God",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "MYE-kul"
+  },
+  {
+    "name": "Chloe",
+    "gender": "female",
+    "meaning": "Blooming, verdant",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "KLO-ee"
+  },
+  {
+    "name": "William",
+    "gender": "male",
+    "meaning": "Resolute protector",
+    "origin_country": "Germany",
+    "origin_culture": "Germanic",
+    "pronunciation": "WIL-yum"
+  },
+  {
+    "name": "Zoe",
+    "gender": "female",
+    "meaning": "Life",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "ZO-ee"
+  },
+  {
+    "name": "Daniel",
+    "gender": "male",
+    "meaning": "God is my judge",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "DAN-yul"
+  },
+  {
+    "name": "Penelope",
+    "gender": "female",
+    "meaning": "Weaver",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "puh-NEL-uh-pee"
+  },
+  {
+    "name": "Henry",
+    "gender": "male",
+    "meaning": "Ruler of the home",
+    "origin_country": "Germany",
+    "origin_culture": "Germanic",
+    "pronunciation": "HEN-ree"
+  },
+  {
+    "name": "Riley",
+    "gender": "neutral",
+    "meaning": "Courageous",
+    "origin_country": "Ireland",
+    "origin_culture": "Irish",
+    "pronunciation": "RYE-lee"
+  },
+  {
+    "name": "Jackson",
+    "gender": "male",
+    "meaning": "Son of Jack",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "JAK-sun"
+  },
+  {
+    "name": "Aurora",
+    "gender": "female",
+    "meaning": "Dawn",
+    "origin_country": "Italy",
+    "origin_culture": "Latin",
+    "pronunciation": "aw-ROR-uh"
+  },
+  {
+    "name": "Levi",
+    "gender": "male",
+    "meaning": "Joined, attached",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "LEE-vye"
+  },
+  {
+    "name": "Hazel",
+    "gender": "female",
+    "meaning": "The hazelnut tree",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "HAY-zul"
+  },
+  {
+    "name": "Muhammad",
+    "gender": "male",
+    "meaning": "Praiseworthy",
+    "origin_country": "Arabia",
+    "origin_culture": "Arabic",
+    "pronunciation": "moo-HAM-mad"
+  },
+  {
+    "name": "Isla",
+    "gender": "female",
+    "meaning": "Island",
+    "origin_country": "Scotland",
+    "origin_culture": "Scottish",
+    "pronunciation": "EYE-luh"
+  },
+  {
+    "name": "Samuel",
+    "gender": "male",
+    "meaning": "God has heard",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "SAM-yoo-ul"
+  },
+  {
+    "name": "Violet",
+    "gender": "female",
+    "meaning": "Purple flower",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "VYE-uh-lit"
+  },
+  {
+    "name": "David",
+    "gender": "male",
+    "meaning": "Beloved",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "DAY-vid"
+  },
+  {
+    "name": "Grace",
+    "gender": "female",
+    "meaning": "Charm, elegance",
+    "origin_country": "England",
+    "origin_culture": "Latin",
+    "pronunciation": "GRAYS"
+  },
+  {
+    "name": "Carter",
+    "gender": "male",
+    "meaning": "Cart driver",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "KAR-ter"
+  },
+  {
+    "name": "Lily",
+    "gender": "female",
+    "meaning": "Pure, passion",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "LIL-ee"
+  },
+  {
+    "name": "Jayden",
+    "gender": "neutral",
+    "meaning": "Thankful",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "JAY-den"
+  },
+  {
+    "name": "Eleanor",
+    "gender": "female",
+    "meaning": "Bright, shining one",
+    "origin_country": "France",
+    "origin_culture": "French",
+    "pronunciation": "EL-uh-nor"
+  },
+  {
+    "name": "Gabriel",
+    "gender": "male",
+    "meaning": "God is my strength",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "GAY-bree-ul"
+  },
+  {
+    "name": "Hannah",
+    "gender": "female",
+    "meaning": "Grace, favor",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "HAN-uh"
+  },
+  {
+    "name": "Leo",
+    "gender": "male",
+    "meaning": "Lion",
+    "origin_country": "Italy",
+    "origin_culture": "Latin",
+    "pronunciation": "LEE-oh"
+  },
+  {
+    "name": "Nora",
+    "gender": "female",
+    "meaning": "Light, honor",
+    "origin_country": "Ireland",
+    "origin_culture": "Irish",
+    "pronunciation": "NOR-uh"
+  },
+  {
+    "name": "Isaac",
+    "gender": "male",
+    "meaning": "He will laugh",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "EYE-zuk"
+  },
+  {
+    "name": "Stella",
+    "gender": "female",
+    "meaning": "Star",
+    "origin_country": "Italy",
+    "origin_culture": "Latin",
+    "pronunciation": "STEL-uh"
+  },
+  {
+    "name": "Kai",
+    "gender": "neutral",
+    "meaning": "Sea, ocean",
+    "origin_country": "Hawaii",
+    "origin_culture": "Hawaiian",
+    "pronunciation": "KYE"
+  },
+  {
+    "name": "Savannah",
+    "gender": "female",
+    "meaning": "Treeless plain",
+    "origin_country": "USA",
+    "origin_culture": "American",
+    "pronunciation": "suh-VAN-uh"
+  },
+  {
+    "name": "Theodore",
+    "gender": "male",
+    "meaning": "Gift of God",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "THEE-uh-dor"
+  },
+  {
+    "name": "Maya",
+    "gender": "female",
+    "meaning": "Dream, illusion",
+    "origin_country": "India",
+    "origin_culture": "Sanskrit",
+    "pronunciation": "MY-uh"
+  },
+  {
+    "name": "Kai",
+    "gender": "male",
+    "meaning": "Warrior",
+    "origin_country": "Japan",
+    "origin_culture": "Japanese",
+    "pronunciation": "KYE"
+  },
+  {
+    "name": "Naomi",
+    "gender": "female",
+    "meaning": "Pleasant, delightful",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "nay-OH-mee"
+  },
+  {
+    "name": "Asher",
+    "gender": "male",
+    "meaning": "Happy, blessed",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "ASH-er"
+  },
+  {
+    "name": "Athena",
+    "gender": "female",
+    "meaning": "Goddess of wisdom",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "uh-THEE-nuh"
+  },
+  {
+    "name": "Kai",
+    "gender": "neutral",
+    "meaning": "Willow tree",
+    "origin_country": "China",
+    "origin_culture": "Chinese",
+    "pronunciation": "KYE"
+  },
+  {
+    "name": "Aaliyah",
+    "gender": "female",
+    "meaning": "Exalted, sublime",
+    "origin_country": "Arabia",
+    "origin_culture": "Arabic",
+    "pronunciation": "ah-LEE-yuh"
+  },
+  {
+    "name": "Ezra",
+    "gender": "male",
+    "meaning": "Help",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "EZ-ruh"
+  },
+  {
+    "name": "Bella",
+    "gender": "female",
+    "meaning": "Beautiful",
+    "origin_country": "Italy",
+    "origin_culture": "Italian",
+    "pronunciation": "BEL-uh"
+  },
+  {
+    "name": "Thomas",
+    "gender": "male",
+    "meaning": "Twin",
+    "origin_country": "Israel",
+    "origin_culture": "Aramaic",
+    "pronunciation": "TOM-us"
+  },
+  {
+    "name": "Ellie",
+    "gender": "female",
+    "meaning": "Bright shining one",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "EL-ee"
+  },
+  {
+    "name": "Charles",
+    "gender": "male",
+    "meaning": "Free man",
+    "origin_country": "Germany",
+    "origin_culture": "Germanic",
+    "pronunciation": "CHARLZ"
+  },
+  {
+    "name": "Addison",
+    "gender": "neutral",
+    "meaning": "Son of Adam",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "AD-ih-sun"
+  },
+  {
+    "name": "Christopher",
+    "gender": "male",
+    "meaning": "Bearer of Christ",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "KRIS-tuh-fer"
+  },
+  {
+    "name": "Avery",
+    "gender": "neutral",
+    "meaning": "Ruler of the elves",
+    "origin_country": "England",
+    "origin_culture": "English",
+    "pronunciation": "AY-vuh-ree"
+  },
+  {
+    "name": "Matthew",
+    "gender": "male",
+    "meaning": "Gift of God",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "MATH-yoo"
+  },
+  {
+    "name": "Sofia",
+    "gender": "female",
+    "meaning": "Wisdom",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "so-FEE-uh"
+  },
+  {
+    "name": "Joshua",
+    "gender": "male",
+    "meaning": "The Lord is salvation",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "JOSH-oo-uh"
+  },
+  {
+    "name": "Camila",
+    "gender": "female",
+    "meaning": "Young ceremonial attendant",
+    "origin_country": "Italy",
+    "origin_culture": "Latin",
+    "pronunciation": "kuh-MEE-luh"
+  },
+  {
+    "name": "Andrew",
+    "gender": "male",
+    "meaning": "Strong and manly",
+    "origin_country": "Greece",
+    "origin_culture": "Greek",
+    "pronunciation": "AN-droo"
+  },
+  {
+    "name": "Aria",
+    "gender": "female",
+    "meaning": "Lioness",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "AH-ree-uh"
+  },
+  {
+    "name": "Joseph",
+    "gender": "male",
+    "meaning": "God will increase",
+    "origin_country": "Israel",
+    "origin_culture": "Hebrew",
+    "pronunciation": "JO-zuf"
+  },
+  {
+    "name": "Mila",
+    "gender": "female",
+    "meaning": "Gracious, dear",
+    "origin_country": "Russia",
+    "origin_culture": "Slavic",
+    "pronunciation": "MEE-luh"
+  },
+  {
+    "name": "Rowan",
+    "gender": "neutral",
+    "meaning": "Little red one",
+    "origin_country": "Ireland",
+    "origin_culture": "Irish",
+    "pronunciation": "RO-un"
+  },
+  {
+    "name": "Sienna",
+    "gender": "female",
+    "meaning": "Orange-red",
+    "origin_country": "Italy",
+    "origin_culture": "Italian",
+    "pronunciation": "see-EN-uh"
+  }
+]

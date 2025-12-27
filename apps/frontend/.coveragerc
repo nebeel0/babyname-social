@@ -1,0 +1,44 @@
+# Coverage configuration for Flutter tests
+# This file defines which files to include/exclude from coverage reports
+
+# Exclude generated files and test files from coverage
+[run]
+omit =
+    # Generated API client code
+    lib/generated/**
+
+    # Test files
+    test/**
+
+    # Generated files
+    **/*.g.dart
+    **/*.freezed.dart
+
+    # Main entry point (hard to test)
+    lib/main.dart
+
+[report]
+# Minimum coverage percentage to pass
+fail_under = 60
+
+# Show lines that are not covered
+show_missing = True
+
+# Exclude lines from coverage with comments
+exclude_lines =
+    # Standard pragmas
+    pragma: no cover
+
+    # Debug code
+    if self\.debug
+
+    # Abstract methods
+    @abstractmethod
+    @abc.abstractmethod
+
+    # Not implemented placeholder
+    raise NotImplementedError
+
+    # Development/debugging code
+    def __repr__
+    if __name__ == .__main__.:

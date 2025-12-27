@@ -1,0 +1,99 @@
+name: Frontend Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.24.x'
+        channel: 'stable'
+        cache: true
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Generate mocks
+      run: flutter pub run build_runner build --delete-conflicting-outputs
+
+    - name: Run tests
+      run: flutter test --coverage
+
+    - name: Check coverage threshold
+      run: |
+        # Install lcov
+        sudo apt-get update
+        sudo apt-get install -y lcov
+
+        # Calculate coverage percentage
+        COVERAGE=$(lcov --summary coverage/lcov.info 2>&1 | grep "lines" | awk '{print $2}' | sed 's/%//')
+
+        echo "Coverage: $COVERAGE%"
+
+        # Check minimum threshold (60%)
+        if (( $(echo "$COVERAGE < 60" | bc -l) )); then
+          echo "❌ Coverage $COVERAGE% is below minimum threshold of 60%"
+          exit 1
+        fi
+
+        echo "✅ Coverage threshold met: $COVERAGE%"
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        files: ./coverage/lcov.info
+        flags: frontend
+        name: frontend-coverage
+        fail_ci_if_error: false
+
+    - name: Generate coverage HTML report
+      run: |
+        sudo apt-get install -y lcov
+        genhtml coverage/lcov.info -o coverage/html
+
+    - name: Upload coverage HTML
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: coverage/html
+        retention-days: 30
+
+    - name: Comment PR with coverage
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+
+          // Read coverage summary
+          const { execSync } = require('child_process');
+          const coverage = execSync('lcov --summary coverage/lcov.info 2>&1 | grep "lines"').toString();
+
+          const comment = `
+          ## 📊 Test Coverage Report
+
+          ${coverage}
+
+          [View detailed coverage report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+          **Coverage threshold:** 60% ✅
+          `;
+
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });

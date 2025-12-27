@@ -1,0 +1,54 @@
+{
+  "export_date": "2025-12-22T08:28:50.274852",
+  "total_rows": 280786,
+  "tables": {
+    "comments": {
+      "rows": 0,
+      "file": "comments.json"
+    },
+    "cultural_contexts": {
+      "rows": 0,
+      "file": "cultural_contexts.json"
+    },
+    "famous_namesakes": {
+      "rows": 807,
+      "file": "famous_namesakes.json"
+    },
+    "famous_references": {
+      "rows": 0,
+      "file": "famous_references.json"
+    },
+    "name_trivia": {
+      "rows": 0,
+      "file": "name_trivia.json"
+    },
+    "name_variants": {
+      "rows": 0,
+      "file": "name_variants.json"
+    },
+    "names": {
+      "rows": 6783,
+      "file": "names.json"
+    },
+    "popularity_history": {
+      "rows": 0,
+      "file": "popularity_history.json"
+    },
+    "popularity_trends": {
+      "rows": 273196,
+      "file": "popularity_trends.json"
+    },
+    "related_names": {
+      "rows": 0,
+      "file": "related_names.json"
+    },
+    "user_name_preferences": {
+      "rows": 0,
+      "file": "user_name_preferences.json"
+    },
+    "users": {
+      "rows": 0,
+      "file": "users.json"
+    }
+  }
+}

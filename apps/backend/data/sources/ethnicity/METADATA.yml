@@ -1,0 +1,55 @@
+# Ethnicity Probability Data
+# =========================
+
+dataset_name: "First Name Race/Ethnicity Probabilities"
+source: "Harvard Dataverse"
+source_url: "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/TYJKEZ"
+version: "2023"
+download_date: "2024-12-22"
+
+description: |
+  Probability distributions of race/ethnicity for 136,000 first names.
+  Based on voter registration data from six U.S. states (FL, NC, GA, LA, NJ, NY).
+
+  Each name has probability scores across five categories:
+  - White
+  - Black/African American
+  - Hispanic/Latino
+  - Asian/Pacific Islander
+  - Other
+
+format: CSV
+file: first_nameRaceProbs.csv
+rows: ~136000
+size_mb: 7.4
+
+columns:
+  - name: "name" (string, uppercase)
+  - whi: "White probability" (float 0-1)
+  - bla: "Black probability" (float 0-1)
+  - his: "Hispanic probability" (float 0-1)
+  - asi: "Asian probability" (float 0-1)
+  - oth: "Other probability" (float 0-1)
+
+citation: |
+  Tzioumis, Konstantinos, 2018, "Demographic aspects of first names",
+  https://doi.org/10.7910/DVN/TYJKEZ, Harvard Dataverse, V2
+
+license: "Creative Commons CC0 1.0"
+usage_restrictions: "Public domain, no restrictions"
+
+data_quality:
+  sample_size: "Based on actual voter registration records"
+  coverage: "Six U.S. states"
+  limitations: |
+    - Does not include all U.S. names
+    - Biased toward registered voters (older population)
+    - May not reflect current baby naming trends
+    - Limited to U.S. demographic categories
+
+ethical_considerations: |
+  This data is used to help parents find names that match their cultural
+  background and community. It is displayed with clear explanations and
+  should never be used for discriminatory purposes.
+
+checksum_md5: ""  # TODO: Calculate and add

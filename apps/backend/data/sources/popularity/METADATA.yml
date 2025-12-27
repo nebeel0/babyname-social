@@ -1,0 +1,53 @@
+# Historical Popularity Data
+# ==========================
+
+dataset_name: "U.S. Baby Names 1880-2017"
+source: "Hadley Wickham's babynames R package"
+source_url: "https://github.com/hadley/babynames"
+original_source: "U.S. Social Security Administration"
+version: "2017"
+download_date: "2024-12-21"
+
+description: |
+  Historical records of baby name popularity in the United States from 1880 to 2017.
+  Includes all names used at least 5 times in a given year.
+
+  Contains:
+  - Annual counts by name, sex, and year
+  - Proportion of babies born that year
+  - Complete coverage from SSA records
+
+format: CSV
+file: hadley-baby-names.csv
+rows: ~1900000
+size_mb: 7.4
+
+columns:
+  - year: "Year of birth" (integer 1880-2017)
+  - sex: "M or F" (string)
+  - name: "First name" (string)
+  - n: "Number of babies with that name" (integer)
+  - prop: "Proportion of all babies that year" (float)
+
+data_quality:
+  completeness: "Names with ≥5 occurrences per year"
+  accuracy: "Official government records"
+  limitations: |
+    - Only names with 5+ occurrences included (privacy)
+    - Does not reflect undocumented populations
+    - Data ends in 2017 (may need updates)
+    - Binary sex classification only
+
+ethical_considerations: |
+  Historical data reflects naming patterns and may show cultural biases.
+  Displayed to inform users about name popularity trends over time.
+
+license: "Public Domain (U.S. Government data)"
+usage_restrictions: "None"
+
+processing_notes: |
+  - Previously imported into database via separate script
+  - Used to populate `popularity_trends` and `popularity_history` tables
+  - Data has been cleaned and validated
+
+checksum_md5: ""  # TODO: Calculate and add

@@ -1,0 +1,106 @@
+services:
+  # PostgreSQL - Names Database
+  db_names:
+    image: postgres:16-alpine
+    container_name: babynames_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: babynames_db
+      TZ: America/Los_Angeles
+    ports:
+      - "127.0.0.1:${POSTGRES_NAMES_PORT:-15434}:5432"
+    volumes:
+      - postgres_names_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d babynames_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL - Users Database
+  db_users:
+    image: postgres:16-alpine
+    container_name: babynames_users_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: users_db
+      TZ: America/Los_Angeles
+    ports:
+      - "127.0.0.1:${POSTGRES_USERS_PORT:-15433}:5432"
+    volumes:
+      - postgres_users_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d users_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis - Cache (LRU, no persistence)
+  redis_cache:
+    image: redis:7-alpine
+    container_name: babynames_redis_cache
+    restart: always
+    ports:
+      - "127.0.0.1:${REDIS_CACHE_PORT:-16381}:6379"
+    volumes:
+      - redis_cache_data:/data
+    command: [
+      "redis-server",
+      "--maxmemory", "2gb",
+      "--maxmemory-policy", "allkeys-lru",
+      "--save", "",
+      "--appendonly", "no"
+    ]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # Redis - Sessions (persistence enabled)
+  redis_sessions:
+    image: redis:7-alpine
+    container_name: babynames_redis_sessions
+    restart: always
+    ports:
+      - "127.0.0.1:${REDIS_SESSIONS_PORT:-16382}:6379"
+    volumes:
+      - redis_sessions_data:/data
+    command: [
+      "redis-server",
+      "--appendonly", "yes",
+      "--maxmemory", "1gb",
+      "--maxmemory-policy", "noeviction"
+    ]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # PgAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: babynames_pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@babynames.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "127.0.0.1:${PGADMIN_PORT:-15050}:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - db_names
+      - db_users
+
+volumes:
+  postgres_names_data:
+  postgres_users_data:
+  redis_cache_data:
+  redis_sessions_data:
+  pgadmin_data:

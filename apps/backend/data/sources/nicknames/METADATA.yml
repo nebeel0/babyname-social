@@ -1,0 +1,44 @@
+# Nickname/Diminutive Data
+# ========================
+
+dataset_name: "Common Nicknames and Diminutives"
+source: "GitHub - carltonnorthern/nickname-and-diminutive-names-lookup"
+source_url: "https://github.com/carltonnorthern/nickname-and-diminutive-names-lookup"
+version: "2018"
+download_date: "2024-12-22"
+
+description: |
+  Mappings of canonical names to their common nicknames and diminutives.
+  Includes both male and female names with established informal variations.
+
+  Examples:
+  - Alexander → Al, Alex, Alec, Lex, Sandy, Xan, Zander
+  - Elizabeth → Beth, Betsy, Betty, Eliza, Liz, Lizzie, Libby
+  - Catherine → Cate, Cathy, Kate, Katie, Kitty, Kay
+
+format: CSV
+files:
+  - male_diminutives.csv (~150 canonical names)
+  - female_diminutives.csv (~150 canonical names)
+
+structure: |
+  Each row: CanonicalName,Nickname1,Nickname2,Nickname3,...
+  Number of nicknames varies by name (1-15)
+
+data_quality:
+  source_type: "Curated from common usage patterns"
+  coverage: "Most common Western/English names"
+  limitations: |
+    - Primarily English-language nicknames
+    - May miss cultural or regional variations
+    - Some nicknames may be outdated
+    - Limited coverage of non-Western names
+
+ethical_considerations: |
+  Nicknames are displayed as options to show naming flexibility.
+  Some diminutives may be culturally specific or outdated.
+
+license: "Public Domain / MIT-style"
+usage_restrictions: "None"
+
+checksum_md5: ""  # TODO: Calculate and add
