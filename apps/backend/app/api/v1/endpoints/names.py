@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy import select
+from sqlalchemy import select, case
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.models.v1.name import NameCreate, NameRead, NameUpdate
@@ -16,7 +16,14 @@ async def get_names(
     session: AsyncSession = Depends(get_names_db),
 ):
     """Get list of names with pagination."""
-    result = await session.execute(select(Name).offset(skip).limit(limit))
+    # Filter out names with null or empty name values
+    result = await session.execute(
+        select(Name)
+        .where(Name.name.isnot(None))
+        .where(Name.name != '')
+        .offset(skip)
+        .limit(limit)
+    )
     names = result.scalars().all()
     return names
 
@@ -64,9 +71,22 @@ async def search_names(
     limit: int = 20,
     session: AsyncSession = Depends(get_names_db),
 ):
-    """Search names by partial match."""
+    """Search names by partial match with relevance ordering."""
+    # Create case statement for ordering:
+    # 1 = exact match (highest priority)
+    # 2 = starts with query
+    # 3 = contains query
+    relevance_order = case(
+        (Name.name.ilike(query), 1),
+        (Name.name.ilike(f"{query}%"), 2),
+        else_=3
+    )
+
     result = await session.execute(
-        select(Name).where(Name.name.ilike(f"%{query}%")).limit(limit)
+        select(Name)
+        .where(Name.name.ilike(f"%{query}%"))
+        .order_by(relevance_order, Name.name)
+        .limit(limit)
     )
     names = result.scalars().all()
     return names
